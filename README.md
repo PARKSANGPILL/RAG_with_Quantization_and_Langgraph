@@ -42,4 +42,5 @@ ___
   ```
   python -m pip install llama-cpp-python --prefer-binary --extra-index-url=https://abetlen.github.io/llama-cpp-python/whl/cu122
   ```
-    - CPU version으로 먼저 설치되어 있다면 지우고(pip uninstall llama-cpp-python) GPU version으로 다시 설치해야함
+  
+    - CPU version으로 먼저 설치되어 있다면, 지우고(pip uninstall llama-cpp-python) GPU version으로 다시 설치해야함
