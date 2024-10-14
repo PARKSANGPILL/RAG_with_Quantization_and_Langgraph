@@ -37,3 +37,8 @@ ___
   ```
   set CMAKE_ARGS="-DLLAMA_CUBLAS=on -DCUDA_PATH=/usr/local/cuda-12.2 -DCUDAToolkit_ROOT=/usr/local/cuda-12.2 -DCUDAToolkit_INCLUDE_DIR=/usr/local/cuda-12/include -DCUDAToolkit_LIBRARY_DIR=/usr/local/cuda-12.2/lib64"
   ```
+
+  - llama-cpp-python cuda12.2 version 설치하기
+  ```
+  python -m pip install llama-cpp-python --prefer-binary --extra-index-url=https://abetlen.github.io/llama-cpp-python/whl/cu122
+  ```
