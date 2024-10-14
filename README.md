@@ -5,9 +5,9 @@
 ```
 https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/tree/main
 ```
-
-- gguf파일로 양자화하기
 ___
+- gguf파일로 양자화하기
+
   - llama.cpp 클론하기
   ```
   git clone https://github.com/ggerganov/llama.cpp.git
@@ -27,9 +27,9 @@ ___
   ```
 
   - --outtype 옵션에는 f32, f16, bf16, q8_0, auto가 있음
-
-- llama-cpp-python 설치하기
 ___
+- llama-cpp-python 설치하기
+
   - 환경변수 설정하기 (GPU사용)
   ```
   set CMAKE_ARGS="-DGGML_CUDA=on"
