@@ -30,6 +30,11 @@ ___
 ___
 - llama-cpp-python 설치하기
 
+  - Microsoft C++ Build Tools 설치하기
+  ```
+  https://visualstudio.microsoft.com/ko/visual-cpp-build-tools/
+  ```
+
   - 환경변수 설정하기 (GPU사용)
   ```
   set FORCE_CMAKE="1"
