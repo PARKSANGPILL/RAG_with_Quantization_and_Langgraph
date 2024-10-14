@@ -32,9 +32,8 @@ ___
 
   - 환경변수 설정하기 (GPU사용)
   ```
-  set CMAKE_ARGS="-DGGML_CUDA=on"
+  set FORCE_CMAKE="1"
   ```
-  - 오래걸림
   ```
-  pip install llama-cpp-python
+  set CMAKE_ARGS="-DLLAMA_CUBLAS=on -DCUDA_PATH=/usr/local/cuda-12.2 -DCUDAToolkit_ROOT=/usr/local/cuda-12.2 -DCUDAToolkit_INCLUDE_DIR=/usr/local/cuda-12/include -DCUDAToolkit_LIBRARY_DIR=/usr/local/cuda-12.2/lib64"
   ```
