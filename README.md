@@ -34,6 +34,7 @@ ___
   ```
   set CMAKE_ARGS="-DGGML_CUDA=on"
   ```
+  - 오래걸림
   ```
   pip install llama-cpp-python
   ```
