@@ -54,3 +54,15 @@ ___
   ```
   
     - CPU version으로 먼저 설치되어 있다면, 지우고(pip uninstall llama-cpp-python) GPU version으로 다시 설치해야함
+
+- 실행하기
+
+  - 경로 맞추고 requirements.txt 설치
+  ```
+  pip install -r requirements.txt
+  ```
+  
+___
+### References
+- https://github.com/teddylee777/langchain-kr/blob/main/17-LangGraph/04-langgraph-search-or-retrieve.ipynb
+- https://langchain-ai.github.io/langgraph/tutorials/rag/langgraph_adaptive_rag_local/#web-search-tool
