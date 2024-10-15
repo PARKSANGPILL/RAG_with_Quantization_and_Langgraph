@@ -54,7 +54,7 @@ ___
   ```
   
     - CPU version으로 먼저 설치되어 있다면, 지우고(pip uninstall llama-cpp-python) GPU version으로 다시 설치해야함
-
+___
 - 실행하기
 
   - 경로 맞추고 requirements.txt 설치
