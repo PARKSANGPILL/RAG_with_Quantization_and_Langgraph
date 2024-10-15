@@ -25,7 +25,7 @@ def format_docs(docs):
         ]
     )
 
-file_path = ["./opt240618.pdf"]
+file_path = ["YOUR_PDF_FILE_PATH"]
 docs = []
 for path in file_path:
     loader = PDFPlumberLoader(path)
@@ -40,7 +40,7 @@ vectorstore = FAISS.from_documents(documents=doc_splits, embedding=embeddings_mo
 
 retriever = vectorstore.as_retriever(search_type="mmr", search_kwargs={"k": 5})
 llm = LlamaCpp(
-    model_path="C:/Users/tkdvl/Desktop/llama3.1/models/Llama3.1-8.0B-Q8_0.gguf",
+    model_path="YOUR_LLM_PATH",
     n_ctx=2048,
     n_gpu_layers=-1,
     n_batch=512,
@@ -85,7 +85,7 @@ graph = workflow.compile(checkpointer=memory)
 
 config = RunnableConfig(configurable={"thread_id": "RAG"})
 
-inputs = GraphState(question="6월의 원유수입량은 얼마인가요?")
+inputs = GraphState(question="YOUR QUESTION")
 
 for output in graph.stream(inputs, config=config):
     print(output)
